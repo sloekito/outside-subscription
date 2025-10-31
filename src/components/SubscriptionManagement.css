@@ -1,0 +1,494 @@
+.subscription-management {
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+.management-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.management-header {
+  text-align: center;
+  margin-bottom: 48px;
+  animation: fadeInDown 0.6s ease-out;
+}
+
+.management-header .logo {
+  margin-bottom: 24px;
+  display: inline-block;
+}
+
+.management-header h1 {
+  font-size: 2.5rem;
+  color: #222222;
+  margin-bottom: 12px;
+  font-weight: 700;
+  animation: fadeInDown 0.6s ease-out 0.1s backwards;
+}
+
+.management-header .subtitle {
+  color: #666666;
+  font-size: 1.1rem;
+  animation: fadeInDown 0.6s ease-out 0.2s backwards;
+}
+
+.management-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  animation: fadeInUp 0.6s ease-out 0.3s backwards;
+}
+
+.current-plan-card,
+.features-card,
+.actions-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.card-header h2 {
+  font-size: 1.5rem;
+  color: #222222;
+  font-weight: 700;
+}
+
+.status-badge {
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.status-badge.active {
+  background: #d4edda;
+  color: #28a745;
+}
+
+.plan-info {
+  background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 24px;
+  border: 2px solid rgb(255, 209, 0);
+}
+
+.plan-name {
+  font-size: 1.8rem;
+  color: #222222;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.plan-price {
+  font-size: 1.3rem;
+  color: #666666;
+  font-weight: 600;
+}
+
+.billing-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.info-row:last-child {
+  border-bottom: none;
+}
+
+.info-row .label {
+  color: #666666;
+  font-weight: 500;
+}
+
+.info-row .value {
+  color: #222222;
+  font-weight: 600;
+}
+
+.upgrade-section {
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 2px solid #f0f0f0;
+}
+
+.upgrade-banner {
+  background: linear-gradient(135deg, #fff8e1 0%, #fffbf0 100%);
+  border: 2px solid rgb(255, 209, 0);
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+.upgrade-content h3 {
+  font-size: 1.3rem;
+  color: #222222;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.upgrade-content p {
+  color: #666666;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.upgrade-price {
+  color: #222222;
+  font-size: 1.1rem;
+}
+
+.upgrade-price strong {
+  color: rgb(200, 150, 0);
+  font-weight: 700;
+}
+
+.btn-upgrade {
+  padding: 14px 28px;
+  background: rgb(255, 209, 0);
+  color: #222222;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  white-space: nowrap;
+}
+
+.btn-upgrade:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 209, 0, 0.4);
+  background: rgb(255, 220, 50);
+}
+
+.features-card h2,
+.actions-card h2 {
+  font-size: 1.3rem;
+  color: #222222;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.benefits-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+}
+
+.benefits-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #444444;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.action-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.btn-action {
+  padding: 14px 24px;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background: #ffffff;
+  color: #222222;
+}
+
+.btn-action:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.btn-action.secondary {
+  border-color: #e0e0e0;
+}
+
+.btn-action.secondary:hover {
+  border-color: rgb(255, 209, 0);
+  background: #fffbf0;
+}
+
+.btn-action.danger {
+  color: #d9534f;
+  border-color: #d9534f;
+}
+
+.btn-action.danger:hover {
+  background: #fee;
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3000;
+  animation: fadeIn 0.3s ease;
+  padding: 20px;
+}
+
+.modal-content {
+  background: #ffffff;
+  border-radius: 16px;
+  max-width: 600px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  animation: slideUp 0.4s ease-out;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 32px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.modal-header h2 {
+  font-size: 1.5rem;
+  color: #222222;
+  font-weight: 700;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  color: #666666;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close-button:hover {
+  background: #f5f5f5;
+  color: #222222;
+}
+
+.modal-body {
+  padding: 32px;
+}
+
+.upgrade-comparison {
+  background: #f5f7fa;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 24px;
+}
+
+.comparison-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+}
+
+.comparison-row .label {
+  color: #666666;
+  font-weight: 500;
+}
+
+.comparison-row .value {
+  color: #222222;
+  font-weight: 600;
+}
+
+.proration-info {
+  margin-bottom: 24px;
+}
+
+.proration-info h3 {
+  font-size: 1.1rem;
+  color: #222222;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.proration-info p {
+  color: #666666;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.proration-info strong {
+  color: #222222;
+  font-weight: 700;
+}
+
+.next-billing {
+  background: #f0f9ff;
+  color: #0369a1;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.upgrade-benefits h3 {
+  font-size: 1.1rem;
+  color: #222222;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+.upgrade-benefits ul {
+  list-style: none;
+}
+
+.upgrade-benefits li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 0;
+  color: #444444;
+  font-size: 0.95rem;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  padding: 24px 32px;
+  border-top: 2px solid #f0f0f0;
+}
+
+.btn-modal {
+  padding: 14px 28px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  border: none;
+}
+
+.btn-modal.secondary {
+  background: #f5f5f5;
+  color: #222222;
+}
+
+.btn-modal.secondary:hover {
+  background: #e0e0e0;
+}
+
+.btn-modal.primary {
+  background: rgb(255, 209, 0);
+  color: #222222;
+}
+
+.btn-modal.primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 209, 0, 0.4);
+  background: rgb(255, 220, 50);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .management-header h1 {
+    font-size: 2rem;
+  }
+
+  .upgrade-banner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .benefits-list {
+    grid-template-columns: 1fr;
+  }
+
+  .modal-footer {
+    flex-direction: column;
+  }
+
+  .btn-modal {
+    width: 100%;
+  }
+}
